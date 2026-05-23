@@ -38,7 +38,7 @@ export default function Layout({ children }) {
     <div className="min-h-screen bg-slate-50 text-gray-900">
 
       {/* Navbar */}
-      <header className="sticky top-0 z-50 backdrop-blur-md bg-white/90 border-b border-gray-200 shadow-sm">
+      <header className="sticky top-0 z-50 backdrop-blur-md bg-white/90 border-b border-gray-200 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
 
           {/* Logo */}
@@ -46,7 +46,7 @@ export default function Layout({ children }) {
             to="/"
             className="flex items-center gap-3 font-semibold text-lg tracking-tight"
           >
-            <span className="h-11 w-11 rounded-2xl bg-gradient-to-br from-blue-400 via-blue-500 to-blue-700 text-white shadow-lg grid place-items-center font-bold">
+            <span className="h-11 w-11 rounded-2xl bg-gradient-to-br from-blue-400 via-blue-500 to-blue-700 text-white  grid place-items-center font-bold">
               CR
             </span>
 
@@ -99,7 +99,7 @@ export default function Layout({ children }) {
             ) : (
               <Link
                 to="/login"
-                className="px-5 py-2 rounded-full bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 transition text-sm font-medium text-white shadow-md"
+                className="px-5 py-2 rounded-full bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 transition text-sm font-medium text-white "
               >
                 Get Started
               </Link>

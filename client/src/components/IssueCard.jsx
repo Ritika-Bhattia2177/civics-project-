@@ -2,7 +2,7 @@ export default function IssueCard({ issue, onSelect, compact = false }) {
   return (
     <button
       onClick={() => onSelect?.(issue)}
-      className={`text-left w-full rounded-3xl border-2 border-blue-200 bg-blue-50 hover:bg-blue-100 transition-all duration-300 overflow-hidden shadow-md ${compact ? 'p-4' : 'p-5'}`}
+      className={`text-left w-full rounded-3xl border-2 border-blue-200 bg-blue-50 hover:bg-blue-100 transition-all duration-300 overflow-hidden  ${compact ? 'p-4' : 'p-5'}`}
     >
       <div className="flex items-center justify-between gap-4">
         <div>

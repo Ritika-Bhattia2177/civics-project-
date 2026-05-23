@@ -60,7 +60,7 @@ export default function MyComplaintsPage() {
       <motion.section
         initial={{ opacity: 0, y: 18 }}
         animate={{ opacity: 1, y: 0 }}
-        className="rounded-[2rem] bg-gradient-to-r from-blue-700 to-blue-900 p-8 md:p-10 shadow-xl text-white"
+        className="rounded-[2rem] bg-gradient-to-r from-blue-700 to-blue-900 p-8 md:p-10  text-white"
       >
         <h1 className="text-4xl sm:text-5xl font-bold">
           My Complaints
@@ -76,7 +76,7 @@ export default function MyComplaintsPage() {
       <motion.section
         initial={{ opacity: 0, y: 18 }}
         animate={{ opacity: 1, y: 0 }}
-        className="bg-white rounded-[2rem] p-6 shadow-lg border border-gray-200"
+        className="bg-white rounded-[2rem] p-6  border border-gray-200"
       >
         <div className="grid md:grid-cols-2 xl:grid-cols-5 gap-4">
 
@@ -153,7 +153,7 @@ export default function MyComplaintsPage() {
           {filteredIssues.map((issue) => (
             <div
               key={issue._id}
-              className="bg-white rounded-3xl border border-gray-200 p-6 shadow-md hover:shadow-xl transition"
+              className="bg-white rounded-3xl border border-gray-200 p-6  hover: transition"
             >
               <div className="flex items-start justify-between">
 
@@ -201,7 +201,7 @@ export default function MyComplaintsPage() {
           )}
         </section>
       ) : (
-        <section className="bg-white rounded-[2rem] border border-gray-200 overflow-hidden shadow-lg">
+        <section className="bg-white rounded-[2rem] border border-gray-200 overflow-hidden ">
 
           <div className="overflow-x-auto">
             <table className="w-full min-w-[760px] text-sm">

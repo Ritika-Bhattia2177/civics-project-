@@ -74,7 +74,7 @@ export default function HelpCenterPage() {
       <motion.section
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="relative overflow-hidden rounded-[2rem] bg-gradient-to-r from-blue-700 via-blue-800 to-blue-900 p-8 md:p-12 shadow-2xl text-white"
+        className="relative overflow-hidden rounded-[2rem] bg-gradient-to-r from-blue-700 via-blue-800 to-blue-900 p-8 md:p-12  text-white"
       >
 
         <div className="relative z-10">
@@ -105,7 +105,7 @@ export default function HelpCenterPage() {
           initial={{ opacity: 0, y: 18 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="rounded-[2rem] border border-gray-200 bg-white p-8 shadow-xl"
+          className="rounded-[2rem] border border-gray-200 bg-white p-8 "
         >
 
           <div className="flex items-center justify-between">
@@ -131,7 +131,7 @@ export default function HelpCenterPage() {
             {tutorials.map((item) => (
               <div
                 key={item.title}
-                className="rounded-3xl border border-blue-200 bg-gradient-to-r from-blue-50 to-white p-5 hover:shadow-xl transition"
+                className="rounded-3xl border border-blue-200 bg-gradient-to-r from-blue-50 to-white p-5 hover: transition"
               >
 
                 <div className="flex items-start gap-4">
@@ -166,7 +166,7 @@ export default function HelpCenterPage() {
           initial={{ opacity: 0, y: 18 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="rounded-[2rem] border border-gray-200 bg-white p-8 shadow-xl"
+          className="rounded-[2rem] border border-gray-200 bg-white p-8 "
         >
 
           <div className="flex items-center justify-between">
@@ -251,7 +251,7 @@ export default function HelpCenterPage() {
         initial={{ opacity: 0, y: 18 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="rounded-[2rem] border border-gray-200 bg-white p-8 shadow-xl"
+        className="rounded-[2rem] border border-gray-200 bg-white p-8 "
       >
 
         <div className="flex items-center justify-between flex-wrap gap-4">
@@ -279,7 +279,7 @@ export default function HelpCenterPage() {
           {categories.map((item) => (
             <div
               key={item.name}
-              className="rounded-3xl border border-blue-200 bg-gradient-to-br from-blue-50 to-white p-6 hover:shadow-xl transition"
+              className="rounded-3xl border border-blue-200 bg-gradient-to-br from-blue-50 to-white p-6 hover: transition"
             >
 
               <div className="flex items-start gap-4">

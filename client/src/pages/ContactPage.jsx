@@ -40,7 +40,7 @@ export default function ContactPage() {
       <motion.section
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="relative overflow-hidden rounded-[2rem] bg-gradient-to-r from-blue-700 via-blue-800 to-blue-900 p-8 md:p-12 shadow-2xl text-white"
+        className="relative overflow-hidden rounded-[2rem] bg-gradient-to-r from-blue-700 via-blue-800 to-blue-900 p-8 md:p-12  text-white"
       >
 
         <div className="relative z-10">
@@ -71,7 +71,7 @@ export default function ContactPage() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           onSubmit={handleSubmit}
-          className="rounded-[2rem] border border-gray-200 bg-white p-8 shadow-xl"
+          className="rounded-[2rem] border border-gray-200 bg-white p-8 "
         >
 
           <div className="flex items-center justify-between flex-wrap gap-4">
@@ -158,7 +158,7 @@ export default function ContactPage() {
             {/* Button */}
             <button
               type="submit"
-              className="w-full rounded-2xl bg-gradient-to-r from-blue-600 to-blue-800 py-4 text-lg font-semibold text-white hover:shadow-2xl transition transform hover:scale-[1.01]"
+              className="w-full rounded-2xl bg-gradient-to-r from-blue-600 to-blue-800 py-4 text-lg font-semibold text-white hover: transition transform hover:scale-[1.01]"
             >
               Send Message
             </button>
@@ -183,7 +183,7 @@ export default function ContactPage() {
         >
 
           {/* EMAIL SUPPORT */}
-          <div className="rounded-[2rem] border border-gray-200 bg-white p-7 shadow-xl">
+          <div className="rounded-[2rem] border border-gray-200 bg-white p-7 ">
 
             <div className="flex items-start gap-4">
 
@@ -214,7 +214,7 @@ export default function ContactPage() {
           </div>
 
           {/* EMERGENCY */}
-          <div className="rounded-[2rem] border border-red-200 bg-gradient-to-r from-red-50 to-rose-50 p-7 shadow-xl">
+          <div className="rounded-[2rem] border border-red-200 bg-gradient-to-r from-red-50 to-rose-50 p-7 ">
 
             <div className="flex items-start gap-4">
 
@@ -245,7 +245,7 @@ export default function ContactPage() {
           </div>
 
           {/* OFFICE MAP */}
-          <div className="rounded-[2rem] border border-gray-200 bg-white p-7 shadow-xl">
+          <div className="rounded-[2rem] border border-gray-200 bg-white p-7 ">
 
             <div className="flex items-center justify-between">
 
@@ -268,7 +268,7 @@ export default function ContactPage() {
             </div>
 
             {/* REAL MAP */}
-            <div className="mt-6 h-[280px] rounded-3xl overflow-hidden border border-blue-200 shadow-lg">
+            <div className="mt-6 h-[280px] rounded-3xl overflow-hidden border border-blue-200 ">
 
               <iframe
                 title="Civic Routes Office"

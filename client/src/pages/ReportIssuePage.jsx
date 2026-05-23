@@ -136,13 +136,13 @@ export default function ReportIssuePage() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 space-y-8">
-      <motion.section initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} className="rounded-[2rem] border-2 border-blue-200 bg-blue-50 p-7 md:p-10 shadow-md">
+      <motion.section initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} className="rounded-[2rem] border-2 border-blue-200 bg-blue-50 p-7 md:p-10 ">
         <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900">Report Issue</h1>
         <p className="mt-4 text-gray-600 text-lg">Create complete complaints with drag & drop images, live map picking, severity tagging, and auto location detection.</p>
       </motion.section>
 
       <div className="grid xl:grid-cols-[1.1fr_0.9fr] gap-6 items-start">
-        <motion.form initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} onSubmit={submitIssue} className="rounded-[2rem] border-2 border-blue-200 bg-white p-7 space-y-5 shadow-md">
+        <motion.form initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} onSubmit={submitIssue} className="rounded-[2rem] border-2 border-blue-200 bg-white p-7 space-y-5 ">
           <div className="grid md:grid-cols-2 gap-4">
             <input name="title" value={form.title} onChange={handleChange} placeholder="Issue title" required className="rounded-2xl bg-blue-50 border-2 border-blue-200 px-4 py-3 text-gray-900 placeholder-gray-500 outline-none focus:border-civic-400" />
             <select name="category" value={form.category} onChange={handleChange} className="rounded-2xl bg-blue-50 border-2 border-blue-200 px-4 py-3 text-gray-900 outline-none focus:border-civic-400">
@@ -186,7 +186,7 @@ export default function ReportIssuePage() {
         </motion.form>
 
         <div className="space-y-6">
-          <motion.section initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} className="rounded-[2rem] border-2 border-blue-200 bg-white p-6 shadow-md">
+          <motion.section initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} className="rounded-[2rem] border-2 border-blue-200 bg-white p-6 ">
             <div className="text-sm uppercase tracking-[0.28em] text-gray-900 font-semibold">Live Map Picker</div>
             <p className="mt-2 text-sm text-gray-600">Click the map area to pick coordinates manually.</p>
             <div ref={mapRef} className="mt-4 relative rounded-2xl overflow-hidden border-2 border-blue-200">
@@ -200,7 +200,7 @@ export default function ReportIssuePage() {
             </div>
           </motion.section>
 
-          <motion.section initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} className="rounded-[2rem] border-2 border-blue-200 bg-white p-6 shadow-md">
+          <motion.section initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} className="rounded-[2rem] border-2 border-blue-200 bg-white p-6 ">
             <div className="text-sm uppercase tracking-[0.28em] text-gray-900 font-semibold">AI Image Preview</div>
             {form.image ? (
               <img src={form.image} alt="preview" className="mt-4 h-52 w-full object-cover rounded-2xl border-2 border-blue-200" />

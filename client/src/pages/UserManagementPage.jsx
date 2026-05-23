@@ -18,7 +18,7 @@ export default function UserManagementPage() {
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div className="rounded-2xl p-6 bg-white border-2 border-blue-200 shadow-md">
+      <div className="rounded-2xl p-6 bg-white border-2 border-blue-200 ">
         <h2 className="text-2xl font-bold text-gray-900">User Management</h2>
         <div className="mt-4 overflow-x-auto">
           <table className="w-full text-sm">

@@ -43,7 +43,7 @@ export default function DepartmentManagementPage() {
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div className="rounded-2xl border-2 border-blue-200 p-6 bg-white shadow-md">
+      <div className="rounded-2xl border-2 border-blue-200 p-6 bg-white ">
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-2xl font-bold text-gray-900">Department Management</h2>
           {editing && <button onClick={() => { setEditing(null); setForm({ name: '', description: '' }); }} className="px-3 py-1 rounded-md bg-gray-500 text-white font-medium hover:bg-gray-600">Cancel</button>}

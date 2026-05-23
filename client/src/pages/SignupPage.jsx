@@ -54,7 +54,7 @@ export default function SignupPage() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         onSubmit={handleSubmit}
-        className="rounded-[2rem] border-2 border-blue-200 bg-white p-8 shadow-md"
+        className="rounded-[2rem] border-2 border-blue-200 bg-white p-8 "
       >
         <h2 className="text-2xl font-semibold text-gray-900">Signup</h2>
         <p className="mt-2 text-sm text-gray-600">Name, Email, Password, Phone, City and optional photo.</p>

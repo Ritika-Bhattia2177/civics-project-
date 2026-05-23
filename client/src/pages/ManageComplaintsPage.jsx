@@ -54,7 +54,7 @@ export default function ManageComplaintsPage() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div className="rounded-2xl border-2 border-blue-200 p-6 bg-white shadow-md">
+      <div className="rounded-2xl border-2 border-blue-200 p-6 bg-white ">
         <div className="flex items-center justify-between">
           <h2 className="text-2xl font-bold text-gray-900">Manage Complaints</h2>
           <div className="flex items-center gap-2">

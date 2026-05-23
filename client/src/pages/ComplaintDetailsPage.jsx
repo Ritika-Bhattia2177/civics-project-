@@ -102,7 +102,7 @@ export default function ComplaintDetailsPage() {
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <motion.header initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="rounded-[1.2rem] border-2 border-blue-200 bg-white p-6 md:p-8 shadow-md">
+      <motion.header initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="rounded-[1.2rem] border-2 border-blue-200 bg-white p-6 md:p-8 ">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
           <div>
             <div className="text-xs uppercase tracking-[0.25em] text-gray-600">Complaint ID</div>
@@ -117,7 +117,7 @@ export default function ComplaintDetailsPage() {
       </motion.header>
 
       <div className="mt-6 grid md:grid-cols-3 gap-6">
-        <section className="md:col-span-2 rounded-2xl border-2 border-blue-200 bg-white p-5 shadow-md">
+        <section className="md:col-span-2 rounded-2xl border-2 border-blue-200 bg-white p-5 ">
           <div className="aspect-video rounded-lg overflow-hidden bg-gray-100 flex items-center justify-center">
             {images.length ? (
               <div className="w-full h-full relative">
