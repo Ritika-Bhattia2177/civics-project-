@@ -1,7 +1,10 @@
 {
   "name": "civic-routes",
   "private": true,
-  "workspaces": ["client", "server"],
+  "workspaces": [
+    "client",
+    "server"
+  ],
   "scripts": {
     "dev": "concurrently -k \"npm run dev --workspace server\" \"npm run dev --workspace client\"",
     "build": "npm run build --workspace server && npm run build --workspace client",
@@ -9,5 +12,23 @@
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
+  },
+  "version": "1.0.0",
+  "description": "A polished MERN stack civic issue reporting platform with citizen/admin roles, image-based issue reporting, live status updates, and a modern animated UI.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ritika-Bhattia2177/civics-project-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Ritika-Bhattia2177/civics-project-/issues"
+  },
+  "homepage": "https://github.com/Ritika-Bhattia2177/civics-project-#readme",
+  "dependencies": {
+    "express": "^5.2.1"
   }
 }

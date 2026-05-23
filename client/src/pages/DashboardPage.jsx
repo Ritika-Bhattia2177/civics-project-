@@ -121,7 +121,7 @@ export default function DashboardPage({ issues, refreshIssues }) {
       <motion.section
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="relative overflow-hidden rounded-[2rem] border-2 border-blue-200 bg-gradient-to-br from-white via-blue-50 to-white p-6 md:p-8 shadow-lg"
+        className="relative overflow-hidden rounded-[2rem] border-2 border-blue-200 bg-gradient-to-br from-white via-blue-50 to-white p-6 md:p-8 "
       >
         <div className="relative grid lg:grid-cols-[1.2fr_0.8fr] gap-6 items-center">
           <div>
@@ -174,7 +174,7 @@ export default function DashboardPage({ issues, refreshIssues }) {
       </div>
 
       <div className="grid lg:grid-cols-2 gap-6 items-start">
-        <motion.section initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="rounded-[2rem] border-2 border-blue-200 bg-white p-6 shadow-md">
+        <motion.section initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="rounded-[2rem] border-2 border-blue-200 bg-white p-6 ">
           <div className="text-sm uppercase tracking-[0.3em] text-civic-600">Issue progress chart</div>
           <h2 className="mt-2 text-2xl font-semibold text-gray-900">Current complaint status split</h2>
           <div className="mt-6 space-y-5">
@@ -192,14 +192,14 @@ export default function DashboardPage({ issues, refreshIssues }) {
           </div>
         </motion.section>
 
-        <motion.section initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="rounded-[2rem] border-2 border-blue-200 bg-white p-6 shadow-md">
+        <motion.section initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="rounded-[2rem] border-2 border-blue-200 bg-white p-6 ">
           <div className="text-sm uppercase tracking-[0.3em] text-civic-600">Recent activity timeline</div>
           <h2 className="mt-2 text-2xl font-semibold text-gray-900">Latest complaint movements</h2>
 
           <div className="mt-6 space-y-4">
             {timelineItems.length ? timelineItems.map((item) => (
               <div key={item.id} className="flex gap-3">
-                <div className="mt-1 h-3 w-3 rounded-full bg-civic-500 shadow-md" />
+                <div className="mt-1 h-3 w-3 rounded-full bg-civic-500 " />
                 <div className="flex-1 rounded-2xl border-2 border-blue-200 bg-blue-50 p-4">
                   <div className="flex items-center justify-between gap-3">
                     <div className="font-medium text-gray-900">{item.title}</div>
@@ -216,7 +216,7 @@ export default function DashboardPage({ issues, refreshIssues }) {
       </div>
 
       <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-6 items-start">
-        <motion.section initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="rounded-[2rem] border-2 border-blue-200 bg-white p-6 shadow-md">
+        <motion.section initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="rounded-[2rem] border-2 border-blue-200 bg-white p-6 ">
           <div className="flex items-center justify-between gap-4">
             <div>
               <div className="text-sm uppercase tracking-[0.3em] text-civic-600">Category insights</div>
@@ -245,7 +245,7 @@ export default function DashboardPage({ issues, refreshIssues }) {
           </div>
         </motion.section>
 
-        <motion.section initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="rounded-[2rem] border-2 border-blue-200 bg-white p-6 shadow-md">
+        <motion.section initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="rounded-[2rem] border-2 border-blue-200 bg-white p-6 ">
           <div className="flex items-center justify-between gap-4">
             <div>
               <div className="text-sm uppercase tracking-[0.3em] text-civic-600">Quick actions</div>
@@ -264,7 +264,7 @@ export default function DashboardPage({ issues, refreshIssues }) {
       </div>
 
       <div className="grid lg:grid-cols-[1.15fr_0.85fr] gap-6">
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="rounded-[2rem] border-2 border-blue-200 bg-white p-6 shadow-md">
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="rounded-[2rem] border-2 border-blue-200 bg-white p-6 ">
           <div className="flex items-center justify-between gap-4">
             <div>
               <div className="text-sm uppercase tracking-[0.3em] text-civic-600">Workflow overview</div>
@@ -280,7 +280,7 @@ export default function DashboardPage({ issues, refreshIssues }) {
           </div>
         </motion.div>
 
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="rounded-[2rem] border-2 border-blue-200 bg-white p-6 shadow-md">
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="rounded-[2rem] border-2 border-blue-200 bg-white p-6 ">
           <div className="text-sm uppercase tracking-[0.3em] text-civic-600">Recent activity</div>
           <h2 className="mt-2 text-2xl font-semibold text-gray-900">Latest civic reports</h2>
           <div className="mt-5 space-y-3">
@@ -301,7 +301,7 @@ export default function DashboardPage({ issues, refreshIssues }) {
       </div>
 
       {user?.role !== 'admin' && (
-        <motion.form initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} onSubmit={submitIssue} className="rounded-[2rem] border-2 border-blue-200 bg-white backdrop-blur-2xl p-6 md:p-8 shadow-md">
+        <motion.form initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} onSubmit={submitIssue} className="rounded-[2rem] border-2 border-blue-200 bg-white backdrop-blur-2xl p-6 md:p-8 ">
           <div className="flex items-center justify-between gap-4">
             <div>
               <h2 className="text-2xl font-semibold text-gray-900">Report a new civic issue</h2>
@@ -333,7 +333,7 @@ export default function DashboardPage({ issues, refreshIssues }) {
       )}
 
         {user?.role === 'admin' && (
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="rounded-[2rem] border-2 border-blue-200 bg-white p-6 shadow-md">
+          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="rounded-[2rem] border-2 border-blue-200 bg-white p-6 ">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
               <div>
                 <div className="text-sm uppercase tracking-[0.3em] text-civic-200">Authority tools</div>
@@ -359,7 +359,7 @@ export default function DashboardPage({ issues, refreshIssues }) {
           </div>
         </section>
 
-        <motion.aside initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} className="rounded-[2rem] border-2 border-blue-200 bg-white p-6 sticky top-28 shadow-md">
+        <motion.aside initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} className="rounded-[2rem] border-2 border-blue-200 bg-white p-6 sticky top-28 ">
           <h2 className="text-2xl font-semibold">Issue details</h2>
           {selected ? (
             <div className="mt-5 space-y-4">
@@ -398,7 +398,7 @@ export default function DashboardPage({ issues, refreshIssues }) {
 
 function InfoCard({ label, value, note }) {
   return (
-    <div className="rounded-3xl border-2 border-blue-200 bg-white p-5 shadow-md">
+    <div className="rounded-3xl border-2 border-blue-200 bg-white p-5 ">
       <div className="text-sm text-gray-600">{label}</div>
       <div className="mt-2 text-3xl font-semibold text-gray-900">{value}</div>
       <div className="mt-2 text-xs text-gray-500">{note}</div>
@@ -418,7 +418,7 @@ function GlassMetric({ label, value, hint }) {
 
 function ActionTile({ title, text }) {
   return (
-    <div className="rounded-3xl border-2 border-blue-200 bg-blue-50 p-4 hover:border-civic-600 hover:shadow-md transition">
+    <div className="rounded-3xl border-2 border-blue-200 bg-blue-50 p-4 hover:border-civic-600 hover: transition">
       <div className="font-medium text-gray-900">{title}</div>
       <div className="mt-2 text-sm text-gray-600">{text}</div>
     </div>

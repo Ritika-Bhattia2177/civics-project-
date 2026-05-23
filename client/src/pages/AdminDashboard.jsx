@@ -42,7 +42,7 @@ export default function AdminDashboard() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div className="rounded-2xl border-2 border-blue-200 p-6 bg-white shadow-md">
+      <div className="rounded-2xl border-2 border-blue-200 p-6 bg-white ">
         <h2 className="text-2xl font-bold text-gray-900">Admin Dashboard</h2>
         <div className="mt-6 grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="rounded-xl p-4 bg-blue-50 border-2 border-blue-200">
@@ -64,12 +64,12 @@ export default function AdminDashboard() {
         </div>
 
         <div className="mt-8 grid md:grid-cols-2 gap-6">
-          <div className="rounded-xl p-4 bg-white border-2 border-blue-200 shadow-sm">
+          <div className="rounded-xl p-4 bg-white border-2 border-blue-200 ">
             <h3 className="text-lg font-semibold text-gray-900 mb-3">Issues by category</h3>
             <Bar data={barData} />
           </div>
 
-          <div className="rounded-xl p-4 bg-white border-2 border-blue-200 shadow-sm">
+          <div className="rounded-xl p-4 bg-white border-2 border-blue-200 ">
             <h3 className="text-lg font-semibold text-gray-900 mb-3">Category distribution</h3>
             <Pie data={pieData} />
           </div>

@@ -42,7 +42,7 @@ export default function IssueAnalyticsPage() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div className="rounded-2xl border-2 border-blue-200 p-6 bg-white shadow-md">
+      <div className="rounded-2xl border-2 border-blue-200 p-6 bg-white ">
         <h2 className="text-2xl font-bold text-gray-900">Issue Analytics</h2>
         <div className="mt-6 grid md:grid-cols-3 gap-6">
           <div className="rounded-xl p-4 bg-blue-50 border-2 border-blue-200">
@@ -52,14 +52,14 @@ export default function IssueAnalyticsPage() {
             </ul>
           </div>
 
-          <div className="rounded-xl p-4 bg-white border-2 border-blue-200 md:col-span-2 shadow-sm">
+          <div className="rounded-xl p-4 bg-white border-2 border-blue-200 md:col-span-2 ">
             <h3 className="text-lg font-semibold text-gray-900">Resolution times</h3>
             <div className="mt-3"><Line data={lineData} /></div>
           </div>
         </div>
 
         <div className="mt-6 grid md:grid-cols-2 gap-6">
-          <div className="rounded-xl p-4 bg-white border-2 border-blue-200 shadow-sm">
+          <div className="rounded-xl p-4 bg-white border-2 border-blue-200 ">
             <h3 className="text-lg font-semibold text-gray-900">Department performance</h3>
             <div className="mt-3 space-y-2 text-sm text-gray-700">
               {deptPerf.map((d) => (
@@ -71,7 +71,7 @@ export default function IssueAnalyticsPage() {
             </div>
           </div>
 
-          <div className="rounded-xl p-4 bg-white border-2 border-blue-200 shadow-sm">
+          <div className="rounded-xl p-4 bg-white border-2 border-blue-200 ">
             <h3 className="text-lg font-semibold text-gray-900">Heatmap preview</h3>
             <div className="mt-3 h-64 rounded-md overflow-hidden border border-gray-200">
               <MapContainer center={[20.5937, 78.9629]} zoom={5} style={{ height: '100%', width: '100%' }}>

@@ -58,7 +58,7 @@ export default function FeaturesPage() {
       <motion.section
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="relative overflow-hidden rounded-[2rem] bg-gradient-to-r from-blue-700 via-blue-800 to-blue-900 p-8 md:p-12 shadow-2xl text-white"
+        className="relative overflow-hidden rounded-[2rem] bg-gradient-to-r from-blue-700 via-blue-800 to-blue-900 p-8 md:p-12  text-white"
       >
         <div className="relative z-10">
 
@@ -88,7 +88,7 @@ export default function FeaturesPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.35, delay: index * 0.05 }}
-            className="bg-white rounded-3xl border border-gray-200 p-7 shadow-md hover:shadow-2xl hover:-translate-y-1 transition duration-300"
+            className="bg-white rounded-3xl border border-gray-200 p-7  hover: hover:-translate-y-1 transition duration-300"
           >
 
             <div className="text-xs uppercase tracking-[0.28em] text-blue-500 font-semibold">
@@ -112,7 +112,7 @@ export default function FeaturesPage() {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="bg-white rounded-[2rem] border border-gray-200 p-8 md:p-10 shadow-xl"
+        className="bg-white rounded-[2rem] border border-gray-200 p-8 md:p-10 "
       >
 
         <div className="flex items-center justify-between gap-4 flex-wrap">
@@ -139,7 +139,7 @@ export default function FeaturesPage() {
           {processFlow.map((item) => (
             <div
               key={item.step}
-              className="bg-gradient-to-br from-blue-50 to-white rounded-3xl border border-blue-100 p-6 shadow-sm hover:shadow-lg transition"
+              className="bg-gradient-to-br from-blue-50 to-white rounded-3xl border border-blue-100 p-6  hover: transition"
             >
 
               <div className="text-blue-600 text-sm font-bold tracking-[0.28em]">

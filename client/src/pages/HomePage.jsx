@@ -80,7 +80,7 @@ export default function HomePage({ issues }) {
 
                 <Link
                   to="/signup"
-                  className="px-7 py-3 rounded-2xl bg-gradient-to-r from-blue-600 to-blue-800 font-semibold text-white hover:shadow-xl transition transform hover:scale-105"
+                  className="px-7 py-3 rounded-2xl bg-gradient-to-r from-blue-600 to-blue-800 font-semibold text-white hover: transition transform hover:scale-105"
                 >
                   Report Issue
                 </Link>
@@ -100,7 +100,7 @@ export default function HomePage({ issues }) {
             <motion.div
               initial={{ opacity: 0, scale: 0.96 }}
               animate={{ opacity: 1, scale: 1 }}
-              className="rounded-[2rem] border border-blue-200 bg-white p-8 shadow-xl"
+              className="rounded-[2rem] border border-blue-200 bg-white p-8 "
             >
 
               <div className="text-sm uppercase tracking-[0.3em] text-blue-600 font-semibold">
@@ -165,7 +165,7 @@ export default function HomePage({ issues }) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.06 }}
-              className="rounded-3xl border border-gray-200 bg-white p-7 shadow-md hover:shadow-2xl transition"
+              className="rounded-3xl border border-gray-200 bg-white p-7  hover: transition"
             >
 
               <div className="text-xs uppercase tracking-[0.25em] text-blue-600 font-semibold">
@@ -194,7 +194,7 @@ export default function HomePage({ issues }) {
           initial={{ opacity: 0, y: 18 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="rounded-[2rem] border border-blue-200 bg-white p-8 shadow-xl"
+          className="rounded-[2rem] border border-blue-200 bg-white p-8 "
         >
 
           <h2 className="text-3xl font-bold text-gray-900">
@@ -240,7 +240,7 @@ export default function HomePage({ issues }) {
             initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="rounded-[2rem] border border-blue-200 bg-white p-8 shadow-xl"
+            className="rounded-[2rem] border border-blue-200 bg-white p-8 "
           >
 
             <div className="flex items-center justify-between">
@@ -262,7 +262,7 @@ export default function HomePage({ issues }) {
             </div>
 
             {/* REAL MAP */}
-            <div className="mt-6 h-[420px] rounded-3xl overflow-hidden border border-blue-200 shadow-lg">
+            <div className="mt-6 h-[420px] rounded-3xl overflow-hidden border border-blue-200 ">
 
               <iframe
                 title="Civic Routes Map"
@@ -280,7 +280,7 @@ export default function HomePage({ issues }) {
             initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="rounded-[2rem] border border-blue-200 bg-white p-8 shadow-xl"
+            className="rounded-[2rem] border border-blue-200 bg-white p-8 "
           >
 
             <h3 className="text-2xl font-bold text-gray-900">
@@ -292,7 +292,7 @@ export default function HomePage({ issues }) {
               {recentComplaints.map((item) => (
                 <div
                   key={item._id || item.title}
-                  className="rounded-2xl border border-blue-200 bg-blue-50 p-5 hover:shadow-md transition"
+                  className="rounded-2xl border border-blue-200 bg-blue-50 p-5 hover: transition"
                 >
 
                   <div className="flex items-center justify-between gap-3">
@@ -355,7 +355,7 @@ export default function HomePage({ issues }) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.06 }}
-              className="rounded-3xl border border-gray-200 bg-white p-7 shadow-md hover:shadow-2xl transition"
+              className="rounded-3xl border border-gray-200 bg-white p-7  hover: transition"
             >
 
               <p className="text-gray-700 leading-8">
@@ -414,7 +414,7 @@ function AnimatedStat({ target, suffix = '', label }) {
   }, [target]);
 
   return (
-    <div className="rounded-3xl border border-blue-200 bg-blue-50 p-6 text-center shadow-sm">
+    <div className="rounded-3xl border border-blue-200 bg-blue-50 p-6 text-center ">
 
       <div className="text-4xl font-bold text-blue-700">
         {value}

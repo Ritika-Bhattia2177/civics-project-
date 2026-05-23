@@ -37,7 +37,7 @@ export default function AuthPage() {
         <h1 className="mt-6 text-4xl sm:text-5xl font-bold leading-tight text-gray-900">Access Civic Routes in a clean, premium experience.</h1>
         <p className="mt-4 text-gray-600 max-w-xl">Use one account to submit complaints, monitor progress, and keep the city informed with live updates.</p>
 
-        <div className="mt-8 rounded-[2rem] border-2 border-blue-200 bg-blue-50 p-6 shadow-md max-w-xl">
+        <div className="mt-8 rounded-[2rem] border-2 border-blue-200 bg-blue-50 p-6  max-w-xl">
           <div className="text-sm uppercase tracking-[0.3em] text-gray-900">Demo ready</div>
           <div className="mt-2 text-lg font-semibold text-gray-900">What you can show after login</div>
           <div className="mt-4 grid sm:grid-cols-2 gap-3 text-sm text-gray-600">
@@ -54,7 +54,7 @@ export default function AuthPage() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.1 }}
         onSubmit={handleSubmit}
-        className="rounded-[2rem] border-2 border-blue-200 bg-white p-8 shadow-md"
+        className="rounded-[2rem] border-2 border-blue-200 bg-white p-8 "
       >
         <div className="flex rounded-full bg-gray-100 p-1 border-2 border-blue-200">
           {['login', 'register'].map((item) => (

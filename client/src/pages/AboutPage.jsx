@@ -64,7 +64,7 @@ export default function AboutPage() {
       <motion.section
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="relative overflow-hidden rounded-[2rem] bg-gradient-to-r from-blue-700 via-blue-800 to-blue-900 p-8 md:p-12 shadow-2xl text-white"
+        className="relative overflow-hidden rounded-[2rem] bg-gradient-to-r from-blue-700 via-blue-800 to-blue-900 p-8 md:p-12  text-white"
       >
 
         <div className="relative z-10">
@@ -94,7 +94,7 @@ export default function AboutPage() {
           initial={{ opacity: 0, y: 18 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="rounded-[2rem] border border-blue-200 bg-white p-8 shadow-lg"
+          className="rounded-[2rem] border border-blue-200 bg-white p-8 "
         >
 
           <div className="text-sm uppercase tracking-[0.3em] text-blue-600 font-semibold">
@@ -113,7 +113,7 @@ export default function AboutPage() {
           initial={{ opacity: 0, y: 18 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="rounded-[2rem] border border-blue-200 bg-white p-8 shadow-lg"
+          className="rounded-[2rem] border border-blue-200 bg-white p-8 "
         >
 
           <div className="text-sm uppercase tracking-[0.3em] text-blue-600 font-semibold">
@@ -137,7 +137,7 @@ export default function AboutPage() {
           initial={{ opacity: 0, y: 18 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="rounded-[2rem] border border-gray-200 bg-white p-8 shadow-lg"
+          className="rounded-[2rem] border border-gray-200 bg-white p-8 "
         >
 
           <h2 className="text-3xl font-bold text-gray-900">
@@ -157,7 +157,7 @@ export default function AboutPage() {
           initial={{ opacity: 0, y: 18 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="rounded-[2rem] border border-gray-200 bg-white p-8 shadow-lg"
+          className="rounded-[2rem] border border-gray-200 bg-white p-8 "
         >
 
           <h2 className="text-3xl font-bold text-gray-900">
@@ -179,7 +179,7 @@ export default function AboutPage() {
         initial={{ opacity: 0, y: 18 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="rounded-[2rem] border border-gray-200 bg-white p-8 shadow-xl"
+        className="rounded-[2rem] border border-gray-200 bg-white p-8 "
       >
 
         <h2 className="text-3xl font-bold text-gray-900">
@@ -191,7 +191,7 @@ export default function AboutPage() {
           {teamMembers.map((member) => (
             <div
               key={member.name}
-              className="rounded-3xl border border-blue-200 bg-blue-50 p-6 hover:shadow-xl transition"
+              className="rounded-3xl border border-blue-200 bg-blue-50 p-6 hover: transition"
             >
 
               <div className="h-16 w-16 rounded-full bg-gradient-to-r from-blue-500 to-blue-700 text-white flex items-center justify-center text-2xl font-bold">
@@ -225,7 +225,7 @@ export default function AboutPage() {
           initial={{ opacity: 0, y: 18 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="rounded-[2rem] border border-gray-200 bg-white p-8 shadow-xl"
+          className="rounded-[2rem] border border-gray-200 bg-white p-8 "
         >
 
           <div className="flex items-center justify-between flex-wrap gap-4">
@@ -284,7 +284,7 @@ export default function AboutPage() {
             ].map((item) => (
               <div
                 key={item.title}
-                className="rounded-3xl border border-blue-200 bg-gradient-to-br from-blue-50 to-white p-5 hover:shadow-lg transition"
+                className="rounded-3xl border border-blue-200 bg-gradient-to-br from-blue-50 to-white p-5 hover: transition"
               >
 
                 <div className="flex items-start gap-4">
@@ -319,7 +319,7 @@ export default function AboutPage() {
           initial={{ opacity: 0, y: 18 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="rounded-[2rem] border border-gray-200 bg-white p-8 shadow-lg"
+          className="rounded-[2rem] border border-gray-200 bg-white p-8 "
         >
 
           <h2 className="text-3xl font-bold text-gray-900">

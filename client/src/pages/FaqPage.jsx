@@ -50,7 +50,7 @@ export default function FaqPage() {
       <motion.section
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="relative overflow-hidden rounded-[2rem] bg-gradient-to-r from-blue-700 via-blue-800 to-blue-900 p-8 md:p-12 shadow-2xl text-white"
+        className="relative overflow-hidden rounded-[2rem] bg-gradient-to-r from-blue-700 via-blue-800 to-blue-900 p-8 md:p-12  text-white"
       >
 
         <div className="relative z-10">
@@ -84,7 +84,7 @@ export default function FaqPage() {
               initial={{ opacity: 0, y: 14 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="rounded-[2rem] border border-gray-200 bg-white shadow-lg overflow-hidden hover:shadow-2xl transition"
+              className="rounded-[2rem] border border-gray-200 bg-white  overflow-hidden hover: transition"
             >
 
               {/* BUTTON */}
@@ -169,7 +169,7 @@ export default function FaqPage() {
         initial={{ opacity: 0, y: 14 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="rounded-[2rem] border border-gray-200 bg-white p-8 shadow-xl"
+        className="rounded-[2rem] border border-gray-200 bg-white p-8 "
       >
 
         <div className="grid md:grid-cols-3 gap-6">
